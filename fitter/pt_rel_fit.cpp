@@ -87,26 +87,25 @@ void data_fit(){
 
 
 //pT_rel with no dif.
-//    TF1 *B_no_dif = new TF1("B_no_dif","[0]*pow(x,[1])*exp([2]*x+[3]*pow(x,2)+[4]*pow(x,3)+[5]*pow(x,4)+[6]*pow(x,5)+[7]*pow(x,6)+[8]*pow(x,7)+[9]*pow(x,8)+[10]*pow(x,9))",0.,3.5);
-    //TF1 *B_no_dif = new TF1("B_no_dif","[0]*pow(x,[1])*exp([2]*x+[3]*pow(x,2)+[4]*pow(x,3)+[5]*pow(x,4)+[6]*pow(x,5))",0.,3.5);
-    TF1 *B_no_dif = new TF1("B_no_dif","[0]*pow(x,[1])*exp([2]*x+[3]*pow(x,2))",0.,3.5);
+    TF1 *B_no_dif = new TF1("B_no_dif","[0]*pow(x,[1])*exp([2]*x+[3]*pow(x,2)+[4]*pow(x,3)+[5]*pow(x,4)+[6]*pow(x,5)+[7]*pow(x,6)+[8]*pow(x,7)+[9]*pow(x,8)+[10]*pow(x,9))",0.,3.5);
+//    TF1 *B_no_dif = new TF1("B_no_dif","[0]*pow(x,[1])*exp([2]*x+[3]*pow(x,2))",0.,3.5);
         B_no_dif->SetParNames("ab","bb","cb","db","eb","ffb");   
                  B_no_dif->SetLineColor(kBlue);
 
-    TF1 *C_no_dif = new TF1("C_no_dif","[0]*pow(x,[1])*exp([2]*x+[3]*pow(x,2)+[4])",0.,3.5);
-//    TF1 *C_no_dif = new TF1("C_no_dif","[0]*pow(x,[1])*exp([2]*x+[3]*pow(x,2)+[4]*pow(x,3)+[5]*pow(x,4)+[6]*pow(x,5)+[7]*pow(x,6)+[8]*pow(x,7)+[9]*pow(x,8)+[10]*pow(x,9))",0.,3.5);
+//    TF1 *C_no_dif = new TF1("C_no_dif","[0]*pow(x,[1])*exp([2]*x+[3]*pow(x,2)+[4])",0.,3.5);
+    TF1 *C_no_dif = new TF1("C_no_dif","[0]*pow(x,[1])*exp([2]*x+[3]*pow(x,2)+[4]*pow(x,3)+[5]*pow(x,4)+[6]*pow(x,5)+[7]*pow(x,6)+[8]*pow(x,7)+[9]*pow(x,8)+[10]*pow(x,9))",0.,3.5);
 
        C_no_dif->SetParNames("ac","bc","cc","dc","ec","ffc");
        C_no_dif->SetLineColor(kRed);
 
-    TF1 *L_no_dif = new TF1("L_no_dif","[0]*pow(x,[1])*exp([2]*x+[3]*pow(x,2))",0.,3.5);
-    //TF1 *L_no_dif = new TF1("L_no_dif","[0]*pow(x,[1])*exp([2]*x+[3]*pow(x,2)+[4]*pow(x,3)+[5]*pow(x,4)+[6]*pow(x,5)+[7]*pow(x,6)+[8]*pow(x,7)+[9]*pow(x,8)+[10]*pow(x,9))",0.,3.5);
+//    TF1 *L_no_dif = new TF1("L_no_dif","[0]*pow(x,[1])*exp([2]*x+[3]*pow(x,2))",0.,3.5);
+    TF1 *L_no_dif = new TF1("L_no_dif","[0]*pow(x,[1])*exp([2]*x+[3]*pow(x,2)+[4]*pow(x,3)+[5]*pow(x,4)+[6]*pow(x,5)+[7]*pow(x,6)+[8]*pow(x,7)+[9]*pow(x,8)+[10]*pow(x,9))",0.,3.5);
 
        L_no_dif->SetParNames("al","bl","cl","dl","el","ffl");
        L_no_dif->SetLineColor(kGreen);
 //And for merging c and uds distributions.
-    TF1 *CL_no_dif = new TF1("CL_no_dif","[0]*pow(x,[1])*exp([2]*x+[3]*pow(x,2))",0.,3.5);
-    //TF1 *CL_no_dif = new TF1("CL_no_dif","[0]*pow(x,[1])*exp([2]*x+[3]*pow(x,2)+[4]*pow(x,3)+[5]*pow(x,4)+[6]*pow(x,5)+[7]*pow(x,6)+[8]*pow(x,7)+[9]*pow(x,8)+[10]*pow(x,9))",0.,3.5);
+  //  TF1 *CL_no_dif = new TF1("CL_no_dif","[0]*pow(x,[1])*exp([2]*x+[3]*pow(x,2))",0.,3.5);
+    TF1 *CL_no_dif = new TF1("CL_no_dif","[0]*pow(x,[1])*exp([2]*x+[3]*pow(x,2)+[4]*pow(x,3)+[5]*pow(x,4)+[6]*pow(x,5)+[7]*pow(x,6)+[8]*pow(x,7)+[9]*pow(x,8)+[10]*pow(x,9))",0.,3.5);
        CL_no_dif->SetParNames("acl","bcl","ccl","dcl","ecl","ffcl");
        CL_no_dif->SetLineColor(kOrange-3);
 
